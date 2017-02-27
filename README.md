@@ -1,8 +1,6 @@
 # ActiveModelSerializers::HashWrapper
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/active_model_serializers/hash_wrapper`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Automatically create wrapper classes for Hashes so ActiveModelSerializers will serialize your hash!
 
 ## Installation
 
@@ -22,15 +20,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can create a wrapper class for your class as so:
 
-## Development
+```ruby
+item_class = ActiveModelSerializers::HashWrapper.wrapper_class("Item")
+wrapped_item = item_class.new(hash)
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Or, for simplicity, you can do all this in one line:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```ruby
+wrapped_item = ActiveModelSerializers::HashWrapper.create("Item", hash)
+```
+
+Wrapper classes created by `ActiveModelSerializers::HashWrapper` are passes all AMS lint tests and can safely be used.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/active_model_serializers-hash_wrapper.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ptrln/active_model_serializers-hash_wrapper.
 
