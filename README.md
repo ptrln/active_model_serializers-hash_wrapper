@@ -41,7 +41,7 @@ Or, for simplicity, you can do all this in one line:
 wrapped_item = ActiveModelSerializers::HashWrapper.create("Item", hash)
 ```
 
-Wrapper classes created by `ActiveModelSerializers::HashWrapper` are passes all AMS lint tests and can safely be used.
+Wrapper classes created by `ActiveModelSerializers::HashWrapper` pass all AMS lint tests and can safely be used.
 
 ## Contributing
 
