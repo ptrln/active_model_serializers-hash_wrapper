@@ -28,7 +28,7 @@ Or install it yourself as:
 
 ## Usage
 
-Let's say you have a hash, and you would like AMS to serialize it. You can create a wrapper class for your class as so:
+Let's say you have a hash, and you would like AMS to serialize it. You can create a wrapper class for your hash like so:
 
 ```ruby
 item_class = ActiveModelSerializers::HashWrapper.wrapper_class("Item")
