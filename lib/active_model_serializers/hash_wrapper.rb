@@ -28,14 +28,10 @@ module ActiveModelSerializers
             value
           end
 
-          def as_json(options = nil)
+          def as_json(*)
             # fallbacks to dumping the source_hash if AMS cannot infer a serializer,
             # and an explicit serializer is not specified
             source_hash
-          end
-
-          def self.serializer_for(model, otions)
-
           end
 
         private
