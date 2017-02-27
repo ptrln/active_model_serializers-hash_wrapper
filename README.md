@@ -2,6 +2,14 @@
 
 Automatically create wrapper classes for Hashes so ActiveModelSerializers will serialize your hash!
 
+[![Code Climate](https://lima.codeclimate.com/github/ptrln/active_model_serializers-hash_wrapper/badges/gpa.svg)](https://lima.codeclimate.com/github/ptrln/active_model_serializers-hash_wrapper)
+
+[![Test Coverage](https://lima.codeclimate.com/github/ptrln/active_model_serializers-hash_wrapper/badges/coverage.svg)](https://lima.codeclimate.com/github/ptrln/active_model_serializers-hash_wrapper/coverage)
+
+[![Issue Count](https://lima.codeclimate.com/github/ptrln/active_model_serializers-hash_wrapper/badges/issue_count.svg)](https://lima.codeclimate.com/github/ptrln/active_model_serializers-hash_wrapper)
+
+[![Build Status](https://travis-ci.org/ptrln/active_model_serializers-hash_wrapper.svg?branch=master)](https://travis-ci.org/ptrln/active_model_serializers-hash_wrapper)
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -20,7 +28,7 @@ Or install it yourself as:
 
 ## Usage
 
-You can create a wrapper class for your class as so:
+Let's say you have a hash, and you would like AMS to serialize it. You can create a wrapper class for your class as so:
 
 ```ruby
 item_class = ActiveModelSerializers::HashWrapper.wrapper_class("Item")
